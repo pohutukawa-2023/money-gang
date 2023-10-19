@@ -9,12 +9,13 @@ import hbs from 'express-handlebars'
 
 import fs from 'node:fs/promises'
 
+// read data.js file and return
 const dataPath = Path.join(__dirname, './data/data.json')
-
 export async function getData() {
   const data = await fs.readFile(dataPath, 'utf-8')
   const spinData = JSON.parse(data)
-  return spinData
+  const spinArray = spinData.spinData
+  return spinArray
 }
 
 const server = express()
@@ -34,10 +35,10 @@ server.get('/', async (req, res) => {
   const spinData = await getData()
   res.render('home', spinData)
 })
-
+// play page
 server.get('/play', async (req, res) => {
-  const spinData = await getData()
-  res.render('play', spinData)
+  const spinArray = await getData()
+  res.render('play', spinArray[0])
 })
 
 export default server
