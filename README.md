@@ -14,3 +14,22 @@
 2. create data.json file
   2.1 balance amount array
   2.2 past result - array of objects
+
+  --- Variables ---
+  
+  spinData = [
+    {
+      "resultNumber": 9,
+      "resultMoney": 90,
+    },
+    {
+      "resultNumber": 5,
+      "resultMoney": -90,
+    },
+  ]
+  
+take all resultMoney numbers in an array
+resultMoneyHistory = [90, -90]
+resultMoneyTotal = reduce the resultMoneyHistory
+initialBalance = 500
+finalBalance = initialBalance + resultMoneyTotal
