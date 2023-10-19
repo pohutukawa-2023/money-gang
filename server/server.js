@@ -35,4 +35,9 @@ server.get('/', async (req, res) => {
   res.render('home', spinData)
 })
 
+server.get('/play', async (req, res) => {
+  const spinData = await getData()
+  res.render('play', spinData)
+})
+
 export default server
