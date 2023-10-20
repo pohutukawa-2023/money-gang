@@ -42,8 +42,16 @@ server.get('/play', async (req, res) => {
 })
 
 server.post('/play', async (req, res) => {
-  // const betValue = Number(req.body.value)
-  console.log(req.body)
+  const spinArray = await getData()
+  const betValue = req.body
+  const resultNumber = Math.floor(Math.random() * 9 + 1)
+  console.log(betValue)
+  console.log(resultNumber)
+  if (Number(betValue.bet) == resultNumber) {
+    console.log('You win $90')
+  } else {
+    console.log('You loose $90')
+  }
 })
 
 export default server

@@ -2,27 +2,31 @@
   "spinData": [
     {
       "resultNumber": 9,
-      "resultMoney": 90,
-      "balance": 590,
-      "betNumber": 5
+      "resultMoney": -90,
+      "balance": 600,
+      "betNumber": 5,
+      "resultMessage": "You loose $90"
     },
     {
       "resultNumber": 9,
       "resultMoney": -90,
       "balance": 500,
-      "betNumber": 5
+      "betNumber": 5,
+      "resultMessage": "You loose $90"
     },
     {
       "resultNumber": 9,
       "resultMoney": 90,
       "balance": 590,
-      "betNumber": 5
+      "betNumber": 5,
+      "resultMessage": "You win $90"
     },
     {
       "resultNumber": 0,
       "resultMoney": 0,
       "balance": 500,
-      "betNumber": 5
+      "betNumber": 5,
+      "resultMessage": "You Win"
     }
   ]
 }
