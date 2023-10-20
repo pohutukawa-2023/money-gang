@@ -41,4 +41,9 @@ server.get('/play', async (req, res) => {
   res.render('play', spinArray[0])
 })
 
+server.post('/play', async (req, res) => {
+  // const betValue = Number(req.body.value)
+  console.log(req.body)
+})
+
 export default server

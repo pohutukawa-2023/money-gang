@@ -3,22 +3,26 @@
     {
       "resultNumber": 9,
       "resultMoney": 90,
-      "balance": 590
+      "balance": 590,
+      "betNumber": 5
     },
     {
       "resultNumber": 9,
       "resultMoney": -90,
-      "balance": 500
+      "balance": 500,
+      "betNumber": 5
     },
     {
       "resultNumber": 9,
       "resultMoney": 90,
-      "balance": 590
+      "balance": 590,
+      "betNumber": 5
     },
     {
       "resultNumber": 0,
       "resultMoney": 0,
-      "balance": 500
+      "balance": 500,
+      "betNumber": 5
     }
   ]
 }
