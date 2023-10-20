@@ -39,6 +39,12 @@
       "resultMoney": -90,
       "balance": 410,
       "betNumber": 1
+    },
+    {
+      "resultNumber": 3,
+      "resultMoney": 90,
+      "balance": 590,
+      "betNumber": 3
     }
   ]
 }
