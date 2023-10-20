@@ -42,16 +42,44 @@ server.get('/play', async (req, res) => {
 })
 
 server.post('/play', async (req, res) => {
+  // const spinArray = await getData()
+  // const betValue = req.body
+  // const resultNumber = Math.floor(Math.random() * 9 + 1)
+  // console.log(betValue)
+  // console.log(resultNumber)
+  // if (Number(betValue.bet) == resultNumber) {
+  //   console.log('You win $90')
+  // } else {
+  //   console.log('You loose $90')
+  // }
+
   const spinArray = await getData()
+  let resultMoney = 0
   const betValue = req.body
   const resultNumber = Math.floor(Math.random() * 9 + 1)
   console.log(betValue)
   console.log(resultNumber)
   if (Number(betValue.bet) == resultNumber) {
-    console.log('You win $90')
+    resultMoney += 90
   } else {
-    console.log('You loose $90')
+    resultMoney -= 90
   }
+
+  const newSpinData = {
+    resultNumber: resultNumber,
+    resultMoney: resultMoney,
+    balance: 500 + resultMoney,
+    betNumber: Number(betValue.bet),
+  }
+
+  spinArray.push(newSpinData)
+
+  await fs.writeFile(
+    dataPath,
+    JSON.stringify({ spinData: spinArray }, null, 2),
+    'utf-8'
+  )
+  res.render('play', spinArray[0])
 })
 
 export default server

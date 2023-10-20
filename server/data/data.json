@@ -27,6 +27,18 @@
       "balance": 500,
       "betNumber": 5,
       "resultMessage": "You Win"
+    },
+    {
+      "resultNumber": 1,
+      "resultMoney": -90,
+      "balance": 410,
+      "betNumber": 6
+    },
+    {
+      "resultNumber": 9,
+      "resultMoney": -90,
+      "balance": 410,
+      "betNumber": 1
     }
   ]
 }
