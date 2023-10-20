@@ -2,16 +2,23 @@
   "spinData": [
     {
       "resultNumber": 9,
-      "resultMoney": 90
+      "resultMoney": 90,
+      "balance": 590
     },
     {
       "resultNumber": 9,
-      "resultMoney": 90
+      "resultMoney": -90,
+      "balance": 500
     },
     {
       "resultNumber": 9,
-      "resultMoney": 90
+      "resultMoney": 90,
+      "balance": 590
+    },
+    {
+      "resultNumber": 0,
+      "resultMoney": 0,
+      "balance": 500
     }
-    
   ]
 }
